@@ -15,7 +15,7 @@ if [ ! $COMMUNITY_SHA256_SOURCE = $COMMUNITY_SHA256_TARGET ]; then
   exit 1
 fi
 
-echo "Extract community edition..."
+echo "Extracting community edition..."
 tar -xvf /tmp/$COMMUNITY_PACKAGE_NAME -C /tmp
 rm /tmp/$COMMUNITY_PACKAGE_NAME
 sudo mkdir -p /opt/idea-IC
@@ -23,11 +23,12 @@ sudo mv /tmp/idea-IC-*/* /opt/idea-IC
 
 if [ -d plugins ]; then
   echo "Copying plugins..."
-  sudo cp -R plugins/* /opt/idea-IC/plugins/
+  sudo cp -R ./plugins/* /opt/idea-IC/plugins/
 fi
 
 echo ""
 echo "================================="
 echo "Please follow wizard instructions"
 echo "================================="
+# Launch intellij wizard
 sh /opt/idea-IC/bin/idea.sh &
