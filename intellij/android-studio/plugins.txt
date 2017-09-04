@@ -1,0 +1,16 @@
+add:
+permissionDispatcher plugin
+pomodoro-tm
+robopojo generator
+.ignore
+adb idea
+eventbus3 intellij plugin
+dagger plugin
+testme
+keypromoter x
+
+
+remove:
+github
+task management
+google
