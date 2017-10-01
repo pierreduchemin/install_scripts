@@ -13,8 +13,8 @@ import subprocess
 from distutils.dir_util import copy_tree
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-u", "--packageUrl", default="https://download.jetbrains.com/idea/ideaIC-2017.2.2.tar.gz", help="a url to get an IntelliJ version")
-parser.add_argument("-s", "--sha256Url", default="https://download.jetbrains.com/idea/ideaIC-2017.2.2.tar.gz.sha256", help="a sha256 url to check package integrity")
+parser.add_argument("-u", "--packageUrl", default="https://download.jetbrains.com/idea/ideaIC-2017.3.4.tar.gz", help="a url to get an IntelliJ version")
+parser.add_argument("-s", "--sha256Url", default="https://download.jetbrains.com/idea/ideaIC-2017.3.4.tar.gz.sha256", help="a sha256 url to check package integrity")
 parser.add_argument("-d", "--destination", default="/opt/idea-IC", help="where IntelliJ must be installed")
 parser.add_argument("-f", "--removeDestination", default=False, help="wheather or not the installer should force remove previous installations", action="store_true")
 args = parser.parse_args()
